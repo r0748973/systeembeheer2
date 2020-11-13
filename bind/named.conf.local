@@ -8,5 +8,5 @@
 
 zone "noa-andries.sb.uclllabs.be" {
 	type master;
-	file "/etc/bind/zones/db.noa-andries.sb.uclllabs.be;
+	file "/etc/bind/zones/db.noa-andries.sb.uclllabs.be";
 };
