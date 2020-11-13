@@ -1,3 +1,4 @@
 ...
 mrt/
 bind/named.conf.mrt-zones
+bind/zones/zone.*
