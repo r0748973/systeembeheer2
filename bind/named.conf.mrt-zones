@@ -1,1 +1,5 @@
 
+zone "foobar.noa-andries.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/zones/zone.foobar";
+};

@@ -2,7 +2,7 @@
 ZONE=$1
 touch /etc/bind/zones/zone.$1
 echo "\$TTL 360
-@    IN SOA ns.$1.noa-andries.sb.uclllabs.be. host.ns.noa-andries.sb.uclllabs.be. (
+@    IN SOA ns.$1.noa-andries.sb.uclllabs.be. host.noa-andries.sb.uclllabs.be. (
 		0	; Serial
 		3H	; Refresh
 		1H	; Retry
@@ -11,13 +11,13 @@ echo "\$TTL 360
 
 @		IN	NS	ns.noa-andries.sb.uclllabs.be." > /etc/bind/zones/zone.$1
 
-echo "$1	IN	NS	ns.noa-andries.sb.uclllabs.be." >> /etc/bind/zones/db.ns.noa-andries.sb.uclllabs.be
-echo "$1	IN	A	193.191.177.188" >> /etc/bind/zones/db.ns.noa-andries.sb.uclllabs.be
+echo "$1	IN	NS	ns.noa-andries.sb.uclllabs.be." >> /etc/bind/zones/db.noa-andries.sb.uclllabs.be
+echo "$1	IN	A	193.191.177.188" >> /etc/bind/zones/db.noa-andries.sb.uclllabs.be
 echo "zone \"$1.noa-andries.sb.uclllabs.be\" {
 	type master;
 	file \"/etc/bind/zones/zone.$1\";
 };" >> /etc/bind/named.conf.mrt-zones
-perl -i -pe '/Serial/ && s/(\d+)/$1+1 . $2/e' /etc/bind/zones/db.ns.noa-andries.sb.uclllabs.be
+perl -i -pe '/Serial/ && s/(\d+)/$1+1 . $2/e' /etc/bind/zones/db.noa-andries.sb.uclllabs.be
 perl -i -pe '/Serial/ && s/(\d+)/$1+1 . $2/e' /etc/bind/zones/zone.$1
 
 rndc reload
