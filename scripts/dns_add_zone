@@ -15,7 +15,7 @@ echo "$1	IN	NS	ns.noa-andries.sb.uclllabs.be." >> /etc/bind/zones/db.ns.noa-andr
 echo "$1	IN	A	193.191.177.188" >> /etc/bind/zones/db.ns.noa-andries.sb.uclllabs.be
 echo "zone \"$1.noa-andries.sb.uclllabs.be\" {
 	type master;
-	file \"/etc/bind/zones/zone.$1";
+	file \"/etc/bind/zones/zone.$1\";
 };" >> /etc/bind/named.conf.mrt-zones
 perl -i -pe '/Serial/ && s/(\d+)/$1+1 . $2/e' /etc/bind/zones/db.ns.noa-andries.sb.uclllabs.be
 perl -i -pe '/Serial/ && s/(\d+)/$1+1 . $2/e' /etc/bind/zones/zone.$1
