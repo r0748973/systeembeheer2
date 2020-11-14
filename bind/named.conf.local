@@ -9,7 +9,7 @@ include "/etc/bind/named.conf.mrt-zones";
 
 zone "noa-andries.sb.uclllabs.be" {
 	type master;
-	file "/etc/bind/zones/db.noa-andries.sb.uclllabs.be";
+	file "/etc/bind/zones/db.ns.noa-andries.sb.uclllabs.be";
 	allow-transfer {193.191.176.254; 193.191.177.4; 193.191.177.188; 193.191.177.254;};
 };
 
