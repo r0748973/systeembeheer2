@@ -12,4 +12,9 @@ zone "noa-andries.sb.uclllabs.be" {
 	file "/etc/bind/zones/db.noa-andries.sb.uclllabs.be";
 	allow-transfer {193.191.176.254; 193.191.177.4; 193.191.177.188; 193.191.177.254;};
 };
+//zone "kasper-vanderhulst.sb.uclllabs.be" IN {
+//	type slave;
+//	masters {193.191.177.166;};
+//};
+
 

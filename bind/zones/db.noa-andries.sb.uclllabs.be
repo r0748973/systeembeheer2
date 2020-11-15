@@ -12,6 +12,7 @@ $TTL	604800
 @	IN	NS	ns.noa-andries.sb.uclllabs.be.
 @	IN	NS	ns1.uclllabs.be.
 @	IN	NS	ns2.uclllabs.be.
+#@	IN	NS	ns.kasper-vanderhulst.sb.uclllabs.be.
 ;
 
 @ 	IN 	A	193.191.177.188
