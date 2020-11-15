@@ -3,3 +3,7 @@ zone "foobar.noa-andries.sb.uclllabs.be" {
 	type master;
 	file "/etc/bind/zones/zone.foobar";
 };
+zone "subzoneua5ing.noa-andries.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/zones/zone.subzoneua5ing";
+};
