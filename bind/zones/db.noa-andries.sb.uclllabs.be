@@ -2,7 +2,7 @@
 ;
 $TTL	604800
 @	IN	SOA	ns.noa-andries.sb.uclllabs.be. host.noa-andries.sb.uclllabs.be. (
-			   1026		; Serial
+			   1200		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -15,15 +15,15 @@ $TTL	604800
 #@	IN	NS	ns.kasper-vanderhulst.sb.uclllabs.be.
 ;
 
-@ 		IN 	A	193.191.177.188
+@		IN	A	193.191.177.188
 ns		IN	A	193.191.177.188
-www 		IN	A	193.191.177.188
-www1		IN 	A	193.191.177.188
+www		IN	A	193.191.177.188
+www1		IN	A	193.191.177.188
 www2		IN	A	193.191.177.188
-test		IN	A	193.191.177.254
-mail		IN	A	193.191.177.188
 secure		IN	A	193.191.177.188
 supersecure	IN	A	193.191.177.188
+test		IN	A	193.191.177.254
+mail		IN	A	193.191.177.188
 
 mx	IN	A	193.191.177.188
 @	IN	MX	10	mx
@@ -38,3 +38,4 @@ foobar	IN	NS	ns.noa-andries.sb.uclllabs.be.
 foobar	IN	A	193.191.177.188
 subzoneua5ing	IN	NS	ns.noa-andries.sb.uclllabs.be.
 subzoneua5ing	IN	A	193.191.177.188
+
