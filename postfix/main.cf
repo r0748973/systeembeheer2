@@ -18,4 +18,10 @@ inet_interfaces = loopback-only
 recipient_delimiter = +
 
 compatibility_level = 2
-
+virtual_mailbox_domains = /var/mail/vdomains
+virtual_mailbox_base = /var/mail/vhosts
+virtual_mailbox_maps = hash:/var/mail/vmailbox
+virtual_minimum_uid = 100
+virtual_uid_maps = static:5000
+vitual_gid_maps = static:5000
+virtual_alias_maps = hash:/var/mail/virtual

@@ -91,7 +91,7 @@ data_directory = /var/lib/postfix
 # from gethostname(). $myhostname is used as a default value for many
 # other configuration parameters.
 #
-#myhostname = host.domain.tld
+myhostname = mx.noa-andries.sb.uclllabs.be
 #myhostname = virtual.domain.tld
 
 # The mydomain parameter specifies the local internet domain name.
@@ -99,7 +99,7 @@ data_directory = /var/lib/postfix
 # $mydomain is used as a default value for many other configuration
 # parameters.
 #
-#mydomain = domain.tld
+mydomain = noa-andries.sb.uclllabs.be
 
 # SENDING MAIL
 # 
@@ -120,7 +120,7 @@ data_directory = /var/lib/postfix
 #
 #myorigin = /etc/mailname
 #myorigin = $myhostname
-#myorigin = $mydomain
+myorigin = $mydomain
 
 # RECEIVING MAIL
 
@@ -135,7 +135,7 @@ data_directory = /var/lib/postfix
 # Note: you need to stop/start Postfix when this parameter changes.
 #
 #inet_interfaces = all
-#inet_interfaces = $myhostname
+inet_interfaces = $myhostname
 #inet_interfaces = $myhostname, localhost
 
 # The proxy_interfaces parameter specifies the network interface
@@ -314,7 +314,8 @@ mynetworks = 127.0.0.0/8
 # list this system as their primary or backup MX host. See the
 # permit_mx_backup restriction description in postconf(5).
 #
-#relay_domains = $mydestination
+#
+relay_domains = localhost, 127.0.0.1, 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
 
 # INTERNET OR INTRANET
 
@@ -437,7 +438,7 @@ mynetworks = 127.0.0.0/8
 # "Maildir/" for qmail-style delivery (the / is required).
 #
 #home_mailbox = Mailbox
-#home_mailbox = Maildir/
+home_mailbox = /var/vmail/user
  
 # The mail_spool_directory parameter specifies the directory where
 # UNIX-style mailboxes are kept. The default setting depends on the
