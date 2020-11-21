@@ -25,8 +25,8 @@ supersecure	IN	A	193.191.177.188
 test		IN	A	193.191.177.254
 mail		IN	A	193.191.177.188
 
+@	IN	mx	10	mx
 mx	IN	A	193.191.177.188
-@	IN	MX	10	mx
 
 @	IN	CAA	0 issue "letsencrypt.org"
 @	IN	CAA	0 iodef "mailto:noa.andries@student.ucll.be"
