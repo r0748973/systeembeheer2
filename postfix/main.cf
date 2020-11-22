@@ -22,5 +22,5 @@ virtual_mailbox_domains = noa-andries.sb.uclllabs.be
 virtual_mailbox_base = /var/vmail
 virtual_mailbox_maps = hash:/etc/postfix/vmailbox
 virtual_uid_maps = static:5000
-vitual_gid_maps = static:5000
+virtual_gid_maps = static:5000
 virtual_alias_maps = hash:/etc/postfix/virtual
