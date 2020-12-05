@@ -2,7 +2,7 @@
 ;
 $TTL	604800
 @	IN	SOA	ns.noa-andries.sb.uclllabs.be. host.noa-andries.sb.uclllabs.be. (
-			   1200		; Serial
+			   1204		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -39,3 +39,7 @@ foobar	IN	A	193.191.177.188
 subzoneua5ing	IN	NS	ns.noa-andries.sb.uclllabs.be.
 subzoneua5ing	IN	A	193.191.177.188
 
+voorbeeldtjeee	IN	NS	ns.noa-andries.sb.uclllabs.be.
+voorbeeldtjeee	IN	A	193.191.177.188
+jef	IN	NS	ns.noa-andries.sb.uclllabs.be.
+jef	IN	A	193.191.177.188

@@ -7,3 +7,11 @@ zone "subzoneua5ing.noa-andries.sb.uclllabs.be" {
 	type master;
 	file "/etc/bind/zones/zone.subzoneua5ing";
 };
+zone "voorbeeldtjeee.noa-andries.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/zones/zone.voorbeeldtjeee";
+};
+zone "jef.noa-andries.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/zones/zone.jef";
+};
