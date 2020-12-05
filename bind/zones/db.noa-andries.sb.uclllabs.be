@@ -2,7 +2,7 @@
 ;
 $TTL	604800
 @	IN	SOA	ns.noa-andries.sb.uclllabs.be. host.noa-andries.sb.uclllabs.be. (
-			   1204		; Serial
+			   1205		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
